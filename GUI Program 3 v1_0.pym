@@ -9,12 +9,13 @@ window.title("Welcome to LikeGeeks app")
 window.geometry('350x200')
 
 selected = IntVar()
+selected.set(1)
 
-rad1 = Radiobutton(window,text='Radiobutton 1', value=1)
-rad2 = Radiobutton(window,text='Radiobutton 2', value=2)
-rad3 = Radiobutton(window,text='Radiobutton 3', value=3, value=selected)
+rad1 = Radiobutton(window, text='Radiobutton 1', value=1)
+rad2 = Radiobutton(window, text='Radiobutton 2', value=2)
+rad3 = Radiobutton(window, text='Radiobutton 3', value=3)
 
-def selected():
+def selectedLabel():
     label_1.configure(text = "pressed THREE")
     selected.get()
 
@@ -23,7 +24,7 @@ rad2.grid(row=2, column=0)
 rad3.grid(row=3, column=0)
 
 #Radio Label
-label_1 = tk.Label(window, text="Radio: "+selected.get())
+label_1 = tk.Label(window, text="Radio: "+str(selected.get()))
 label_1.grid(row=4, column=0, columnspan=2)
 
 chk1_state = BooleanVar()

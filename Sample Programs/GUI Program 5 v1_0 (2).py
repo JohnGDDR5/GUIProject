@@ -18,7 +18,7 @@ def doBut5():
 
 
 root = tkinter.Tk()
-logo = tkinter.PhotoImage(file="boi.png")
+logo = tkinter.PhotoImage(file="boi.png/")
 
 label_1 = tkinter.Label(bob, text="empty", image=logo)
 label_1.photo = logo
