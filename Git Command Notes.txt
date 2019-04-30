@@ -16,6 +16,12 @@ Adds a new .html file to the file
 git push origin master -f
 Force updates files into GitHub
 
+git checkout -b Testing
+Creates a new branch called "Testing", checkout makes it the active branch
+
+git push origin Testing
+Pushes all the files in your commit to the "Testing" branch
+
 touch .gitignore
 Adds a file called ".gitignore", where you change to add the names of files to ignore in the file. Useful when using "git add .", so it won't add specific files in the same file
 
