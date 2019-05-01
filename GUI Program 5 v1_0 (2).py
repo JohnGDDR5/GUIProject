@@ -16,32 +16,32 @@ def doBut4():
 def doBut5():
     label_1.configure(text = "empty")
 
-
+#"Pictures/Minecraft \- Creeper.png"
 root = tkinter.Tk()
-logo = tkinter.PhotoImage(file="boi.png/")
+logo = tkinter.PhotoImage(file="Pictures/Minecraft - Creeper.png")
 
-label_1 = tkinter.Label(bob, text="empty", image=logo)
+label_1 = tkinter.Label(root, text="empty", image=logo)
 label_1.photo = logo
 label_1.grid(row=0, column=0, columnspan=2)
 
 
 
-but1 = tkinter.Button(bob, text="ONE", command=doBut1, width=10)
+but1 = tkinter.Button(root, text="ONE", command=doBut1, width=10)
 but1.grid(row=1, column=0)
 
-but2 = tkinter.Button(bob, text="TWO", command=doBut2, width=10)
+but2 = tkinter.Button(root, text="TWO", command=doBut2, width=10)
 but2.grid(row=1, column=1)
 
-but3 = tkinter.Button(bob, text="THREE", command=doBut3, width=10)
+but3 = tkinter.Button(root, text="THREE", command=doBut3, width=10)
 but3.grid(row=2, column=0)
 
-but4 = tkinter.Button(bob, text="FOUR", command=doBut4, width=10)
+but4 = tkinter.Button(root, text="FOUR", command=doBut4, width=10)
 but4.grid(row=2, column=1)
 
-but5 = tkinter.Button(bob, text="Reset", command=doBut5, width=10, bg="red")#, anchor = N)
+but5 = tkinter.Button(root, text="Reset", command=doBut5, width=10, bg="red")#, anchor = N)
 but5["anchor"] = N
 but5.grid(row=1, column=2, columnspan=1, rowspan=2, padx=10, sticky= W+E+N+S)#, fill=X)
 #but5.pack()
           
                     
-bob.mainloop()
+root.mainloop()
