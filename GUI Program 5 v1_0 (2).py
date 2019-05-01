@@ -40,6 +40,7 @@ but4.grid(row=2, column=1)
 
 but5 = tkinter.Button(root, text="Reset", command=doBut5, width=10, bg="red")#, anchor = N)
 but5["anchor"] = N
+#Another way of changing more than one thing is .configure(text = "N")
 but5.grid(row=1, column=2, columnspan=1, rowspan=2, padx=10, sticky= W+E+N+S)#, fill=X)
 #but5.pack()
           

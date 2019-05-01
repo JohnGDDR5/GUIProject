@@ -5,22 +5,25 @@ from tkinter import *
 from tkinter.ttk import *
 
 root = tk.Tk()
-root.title("Welcome to LikeGeeks app")
+root.title("GUI")
 root.geometry('350x200')
 
+#top_frame = Frame(root, width=450, height=50)#, pady=3)#bg='cyan'
+#model_label = Label(top_frame, text='Model Dimensions')
+#model_label.grid(row=10, column=0, columnspan=1, rowspan=1, sticky= N+S+E+W)
 
 logo = tk.PhotoImage(file="Pictures/Minecraft - Creeper.png")
 
 label_0 = tk.Label(root, text="", image=logo)#.pack(fill = "x")
 label_0.photo = logo
-label_0.grid(row=0, column=0, columnspan=1, rowspan=1, sticky= NSEW)
+label_0.grid(row=0, column=0, columnspan=1, rowspan=1, sticky= N+S+E+W)
 #label_0.grid(row=0, column=0, columnspan=2, rowspan=5, sticky= center)#, height=1)# sticky= N+S+E+W)
 #label_0.grid_rowconfigure(root, 0, weight=1)
 
 #Grid.rowconfigure(root, 0, weight=1)
 #Grid.columnconfigure(root, 0, weight=1)
 #Changes the "weight" to 1 for every 
-for i in range(9):
+for i in range(10):
     Grid.rowconfigure(root, i, weight=1)
     Grid.columnconfigure(root, 0, weight=1)
 
