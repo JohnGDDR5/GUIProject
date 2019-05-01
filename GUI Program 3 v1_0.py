@@ -22,7 +22,7 @@ label_0.grid(row=0, column=0, columnspan=1, rowspan=1, sticky= NSEW)
 #Changes the "weight" to 1 for every 
 for i in range(9):
     Grid.rowconfigure(root, i, weight=1)
-    Grid.columnconfigure(root, i, weight=1)
+    Grid.columnconfigure(root, 0, weight=1)
 
 #Radios
 selected1 = IntVar()
@@ -41,7 +41,7 @@ rad3.grid(row=3, column=0)
 
 #Radio Label
 label_1 = tk.Label(root, text="Radio: "+str(selected1.get()))
-label_1.grid(row=4, column=0, columnspan=2)
+label_1.grid(row=4, column=0, columnspan=1)
 
 #Checkboxes
 chk1_state = BooleanVar()
@@ -74,6 +74,6 @@ chk3.grid(row=7, column=0)
 #label_2 = tk.Label(root, text="CheckBoxes: "+str(list(stateList)))
 #label_2.grid(row=8, column=0, columnspan=2)
 label_3 = tk.Label(root, text="Test: "+str([stateList[0].get(), stateList[1].get(), stateList[2].get()]), font=("Arial Bold", 10))
-label_3.grid(row=9, column=0, columnspan=2)
+label_3.grid(row=9, column=0, columnspan=1)
 
 root.mainloop()
